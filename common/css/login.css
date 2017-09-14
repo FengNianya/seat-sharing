@@ -60,3 +60,8 @@ form .material-icons{
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 330px){
+  .button_box button.btn.waves-effect.waves-light{
+    width:35%;
+  }
+}
