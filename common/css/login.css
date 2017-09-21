@@ -25,6 +25,13 @@ header ul li:hover{
   background: #ffffff;
   position: relative;
 }
+.student_sex{
+  text-align: center;
+}
+.student_checkBox div ,.student_inviteNumber input{
+  display: inline-block;
+}
+
 a.btn-floating.btn-large.waves-effect.waves-light.red{
   position: absolute;
   right: -25px;

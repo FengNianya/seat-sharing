@@ -33,19 +33,76 @@
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">同意</a>
             </div>
           </div> -->
-
+          <!-- 学生邮箱 -->
+           <div class="">
+             <i class="large material-icons">email</i>
+             <label for="student_email">邮箱：</label>
+             <input id="student_email"type="text" name="student_email" value="">
+           </div>
+           <!-- 学生昵称 -->
+            <div class="">
+              <i class="large material-icons">perm_identity</i>
+              <label for="student_nickname">昵称：</label>
+              <input id="student_nickname"type="text" name="student_nickname" value="">
+            </div>
+            <!-- 学生手机号 -->
+             <div class="">
+               <i class="large material-icons">phone</i>
+               <label for="student_phone">手机号：</label>
+               <input id="student_phone"type="number" name="student_phone" value="">
+             </div>
             <!-- 学生姓名 -->
              <div class="">
                <i class="material-icons">assignment_ind</i>
                <label for="student_name">姓名：</label>
-               <input id="student_name"type="text" name="" value="">
+               <input id="student_name"type="text" name="student_name" value="">
              </div>
+
+             <!-- 学生性别 -->
+
+              <!-- 学生生日 -->
+               <div class="">
+                 <i class="material-icons">redeem</i>
+                 <label for="student_birthday">生日：</label>
+                 <input id="student_birthday"type="text" name="student_birthday" value="">
+               </div>
+               <!-- 学生身份证号 -->
+                <div class="">
+                  <i class="material-icons">credit_card</i>
+                  <label for="student_idNunber">身份号：</label>
+                  <input id="student_idNunber"type="number" name="student_idNunber" value="">
+                </div>
+
+                 <!-- 学生专业 -->
+                  <div class="">
+                    <i class="material-icons">assignment_ind</i>
+                    <label for="student_major">专业：</label>
+                    <input id="student_major"type="text" name="student_major" value="">
+                  </div>
              <!-- 学生密码 -->
              <div class="">
                <i class="material-icons">vpn_key</i>
                <label for="student_password">密码：</label>
-               <input id="student_passwor"type="password" name="" value="">
+               <input id="student_password"type="password" name="student_password" value="">
              </div>
+             <!-- 选框 -->
+             <div class="student_checkBox">
+               <div class="student_sex">
+                 <label for="">性别:</label>
+                 <input class="with-gap" name="sex" type="radio" id="male" value="male"checked />
+                 <label for="male">男</label>
+                 <input class="with-gap" name="sex" type="radio" id="female" value="female" />
+                 <label for="female">女</label>
+               </div>
+               <!-- 学生身年级 -->
+            
+                <!-- 学生邀请码 -->
+                <div class="student_inviteNumber">
+                  <label for="student_inviteNumber">邀请码：</label>
+                  <input id="student_inviteNumber"type="number" name="student_inviteNumber" value="8888">
+                </div>
+             </div>
+
              <!-- 验证码 -->
              <div class="">
                <label for="">验证码：</label> <img src="" alt="验证码加载失败">
@@ -55,6 +112,7 @@
                <button type="submit" name="button" class="btn waves-effect waves-light">登陆 </button>
                 <button type="reset" name="button" class="btn waves-effect waves-light">重置</button>
              </div>
+
           </form>
         </div>
       </div>
