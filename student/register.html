@@ -4,16 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>学生注册</title>
-    <link rel="stylesheet" href="..\common\css\materialize.min.css">
+    <link rel="stylesheet" href="../common/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="..\common\css\login.css">
+    <link rel="stylesheet" href="../common/css/login.css">
+    <link rel="stylesheet" href="../common/css/register.css">
     <script type="text/javascript" src="../common/js/jquery.min.js"></script>
-    <script type="text/javascript" src="..\common\js\materialize.min.js"></script>
+    <script type="text/javascript" src="../common/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/register.js" charset="utf-8"></script>
   </head>
   <body>
       <header>
       <ul>
-        <a href="#"><li>学生登录</li></a>
+        <a href="#"><li>学生注册</li></a>
         <a href="#"><li>返回</li>
       </ul>
     </header>
@@ -98,18 +100,21 @@
 
                 <!-- 学生邀请码 -->
                 <div class="student_inviteNumber">
-                  <label for="student_inviteNumber">邀请码：</label>
+                  <label for="student_inviteNumber" id="IvCode">邀请码：</label>
                   <input id="student_inviteNumber"type="number" name="student_inviteNumber" value="8888">
                 </div>
              </div>
 
              <!-- 验证码 -->
              <div class="">
-               <label for="">验证码：</label> <img src="" alt="验证码加载失败">
+               <label for="">验证码：</label>
+               <input type = "button" value="开启验证码"onclick="createCode()" class="btn waves-effect waves-light"/>
+                <input type="text" name="" value="" id="code">
+                 <label for="">输入验证码</label><input type="text" name="" value=""id="inputCode">
              </div>
              <!-- 确认 -->
              <div class="button_box">
-               <button type="submit" name="button" class="btn waves-effect waves-light">登陆 </button>
+               <button type="button" name="button" class="btn waves-effect waves-light" id="register" onclick="validate()">注册</button>
                 <button type="reset" name="button" class="btn waves-effect waves-light">重置</button>
              </div>
 
@@ -228,5 +233,4 @@
             });
     	</script>
   </body>
-  <script type="text/javascript" src="login.js"></script>
 </html>

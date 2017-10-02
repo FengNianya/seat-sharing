@@ -1,0 +1,19 @@
+i.btn.waves-effect.waves-light.waves-input-wrapper {
+    padding: 2px;
+    background-color: darksalmon;
+    margin-bottom: 20px;
+}
+input#code {
+  font-size: 35px;
+  font-weight: 600;
+  width: 100px;
+  background: #978989;
+  color: aliceblue;
+  border-radius: 5px;
+  text-align: center;
+}
+input#inputCode {
+  font-size: 35px;
+  font-weight: 600;
+  width: 100px;
+}

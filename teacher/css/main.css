@@ -1,0 +1,135 @@
+body,html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {/*手机*/
+  .header {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .meau_btn {
+    display: block;
+  }
+
+  #title {
+    font-size: 14px;
+  }
+
+  .container {
+    height: calc(100% - 60px);/*减去header*/
+    height: -moz-calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    width: calc(100% + 260px);/*加上meau宽度*/
+    width: -moz-calc(100% + 260px);
+    width: -webkit-calc(100% + 260px);
+    margin-left: -260px;
+  }
+}
+
+
+@media screen and (min-width: 800px) {/*平板和电脑*/
+  .header {
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .meau_btn {
+    display: none;
+  }
+
+  #title {
+    font-size: 20px;
+  }
+
+  .container {
+    height: calc(100% - 80px);/*减去header*/
+    height: -moz-calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+    width: 100%;               /*大屏幕宽度直接包含meau*/
+    margin-left: 0;
+  }
+}
+/*header的媒体查询*/
+
+.header {
+  width: 100%;
+  background-color: #4796ff;
+  position: relative;
+  text-align: center;
+}
+
+.meau_btn {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  background-image: url(../../img/meau.png);
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+.meau_btn:hover {
+  background-color: #1a74ec;
+  transition-duration: 0.2s;
+}
+
+#title {
+  color: #FFF;
+}
+
+.container {
+  background-color: #e4e4e4;
+  transition-duration: 0.2s;
+}
+
+.meau {
+  width:259px;
+  background-color: #fff;
+  height: 100%;
+  float: left;
+  border-right: 1px #aaaaaa solid;
+}
+
+.main {
+  height: 100%;
+  float: left;
+  width: calc(100% - 260px);/*从container减去ifarme*/
+  width: -moz-calc(100% - 260px);
+  width: -webkit-calc(100% - 260px);
+}
+
+.meau img {
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.meau h3 {
+  color: #656565;
+  padding-left: 40px;
+}
+
+.meau ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.meau li {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  padding: 0;
+  cursor:pointer;
+  color: #656565;
+  font-size: 14px;
+}
