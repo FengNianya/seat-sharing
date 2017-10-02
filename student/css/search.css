@@ -1,0 +1,17 @@
+.search_list{
+
+}
+.search_list ul li{
+  display:inline-block;
+  margin: 0 50px;
+}
+.search_timeInput select{
+  display: inline-block;
+  width: 80px;
+}
+.showSeat table{
+  background: rgb(213, 213, 213);
+}
+.showSeat table td{
+  text-align: center;
+}
